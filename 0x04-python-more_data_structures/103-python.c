@@ -7,7 +7,6 @@
  * @p: Python Object
  * Return: no return
  */
-
 void print_python_bytes(PyObject *p)
 {
 	char *string;
@@ -70,3 +69,4 @@ void print_python_list(PyObject *p)
 		if (PyBytes_Check(obj))
 			print_python_bytes(obj);
 	}
+}
